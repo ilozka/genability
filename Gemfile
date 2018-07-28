@@ -15,6 +15,7 @@ group :development, :test do
   gem "simplecov", "~> 0.5"
   gem "vcr", "~> 3.0"
   gem "webmock", "~> 1.7"
+  gem "rb-readline"
   gem "pry"
 end
 

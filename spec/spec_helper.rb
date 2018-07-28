@@ -4,6 +4,7 @@ require 'rspec'
 require 'webmock/rspec'
 require 'genability'
 require 'vcr'
+require 'pry'
 
 CONFIGURATION_DEFAULTS = begin
   YAML::load_file("#{File.dirname(__FILE__)}/configuration.yml").inject({}) do |options, (key, value)|
