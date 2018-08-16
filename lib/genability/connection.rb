@@ -16,7 +16,6 @@ module Genability
       }
 
       Faraday::Connection.new(options) do |connection|
-        connection.adapter adapter
         connection.basic_auth application_id, application_key
         connection.headers['Accept'] = "application/#{format}; charset=utf-8"
         connection.headers['User-Agent'] = user_agent
@@ -32,6 +31,7 @@ module Genability
         end
         connection.use Faraday::Response::RaiseHttp4xx
         connection.use Faraday::Response::RaiseHttp5xx
+        connection.adapter adapter
       end
     end
   end
