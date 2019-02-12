@@ -15,6 +15,7 @@ module Genability
         {
           "fromDateTime" => format_to_iso8601(options[:from] || options[:from_date_time]),
           "toDateTime" => format_to_iso8601(options[:to] || options[:to_date_time]),
+          "tariffEffectiveOn" => format_to_ymd(options[:tariff_effective_on]),
           "detailLevel" => convert_to_upcase(options[:detail_level]),
           "groupBy" => convert_to_upcase(options[:group_by]),
           "tiers" => convert_to_upcase(options[:tiers]),
