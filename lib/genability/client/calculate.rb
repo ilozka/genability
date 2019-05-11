@@ -34,6 +34,7 @@ module Genability
           "detailLevel" => convert_to_upcase(options[:detail_level]),
           "tiers" => convert_to_upcase(options[:tiers]),
           "groupBy" => convert_to_upcase(options[:group_by]),
+          "fields" => options[:fields],
           "tariffInputs" => tariff_inputs_params(options[:tariff_inputs]),
           "rateInputs" => rate_inputs_params(options[:rate_inputs])
         }.
