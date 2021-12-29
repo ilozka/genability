@@ -2,7 +2,7 @@ source "http://rubygems.org"
 
 gem "faraday", "~> 0.7"
 gem "faraday_middleware", "~> 0.7"
-gem "hashie", "~> 1.2"
+gem "hashie", "~> 4.1"
 gem "multi_json", "~> 1.0"
 gem "chronic", "~> 0.6"
 
@@ -17,4 +17,3 @@ group :development, :test do
   gem "webmock", "~> 1.7"
   gem "pry"
 end
-
