@@ -106,8 +106,8 @@ Gem::Specification.new do |s|
     s.specification_version = 4
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<faraday>, ["~> 0.7"])
-      s.add_runtime_dependency(%q<faraday_middleware>, ["~> 0.7"])
+      s.add_runtime_dependency(%q<faraday>, ["~> 1.0"])
+      s.add_runtime_dependency(%q<faraday_middleware>, ["~> 1.0"])
       s.add_runtime_dependency(%q<hashie>, ["~> 3.4"])
       s.add_runtime_dependency(%q<multi_json>, ["~> 1.0"])
       s.add_runtime_dependency(%q<chronic>, ["~> 0.10"])
@@ -121,8 +121,8 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<webmock>, ["~> 1.7"])
       s.add_development_dependency(%q<pry>, [">= 0"])
     else
-      s.add_dependency(%q<faraday>, ["~> 0.7"])
-      s.add_dependency(%q<faraday_middleware>, ["~> 0.7"])
+      s.add_dependency(%q<faraday>, ["~> 1.0"])
+      s.add_dependency(%q<faraday_middleware>, ["~> 1.0"])
       s.add_dependency(%q<hashie>, ["~> 3.4"])
       s.add_dependency(%q<multi_json>, ["~> 1.0"])
       s.add_dependency(%q<chronic>, ["~> 0.10"])
@@ -137,8 +137,8 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<pry>, [">= 0"])
     end
   else
-    s.add_dependency(%q<faraday>, ["~> 0.7"])
-    s.add_dependency(%q<faraday_middleware>, ["~> 0.7"])
+    s.add_dependency(%q<faraday>, ["~> 1.0"])
+    s.add_dependency(%q<faraday_middleware>, ["~> 1.0"])
     s.add_dependency(%q<hashie>, ["~> 3.4"])
     s.add_dependency(%q<multi_json>, ["~> 1.0"])
     s.add_dependency(%q<chronic>, ["~> 0.10"])
@@ -153,4 +153,3 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<pry>, [">= 0"])
   end
 end
-
