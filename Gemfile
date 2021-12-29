@@ -2,7 +2,7 @@ source "http://rubygems.org"
 
 gem "faraday", "~> 1.0"
 gem "faraday_middleware", "~> 1.0"
-gem "hashie", "~> 4.1.0"
+gem "hashie", "~> 4"
 gem "multi_json", "~> 1.0"
 gem "chronic", "~> 0.10"
 
