@@ -2,7 +2,7 @@ source "http://rubygems.org"
 
 gem "faraday", "~> 0.9.2"
 gem "faraday_middleware", "~> 0.10"
-gem "hashie", "~> 3.4"
+gem "hashie", "~> 4.1.0"
 gem "multi_json", "~> 1.0"
 gem "chronic", "~> 0.10"
 
@@ -18,4 +18,3 @@ group :development, :test do
   gem "rb-readline"
   gem "pry"
 end
-
