@@ -4,7 +4,7 @@ require 'hashie'
 # @private
 module Faraday
   # @private
-  class Response::RaiseHttp4xx < Response::Middleware
+  class Response::RaiseHttp4xx < Faraday::Middleware
 
     def on_complete(env)
       case env[:status].to_i

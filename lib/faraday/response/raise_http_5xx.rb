@@ -3,7 +3,7 @@ require 'faraday'
 # @private
 module Faraday
   # @private
-  class Response::RaiseHttp5xx < Response::Middleware
+  class Response::RaiseHttp5xx < Faraday::Middleware
 
     def on_complete(env)
       case env[:status].to_i
