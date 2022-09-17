@@ -1,4 +1,3 @@
-require 'faraday_middleware'
 require 'faraday/response/raise_http_4xx'
 require 'faraday/response/raise_http_5xx'
 
