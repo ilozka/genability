@@ -2,6 +2,7 @@ source "http://rubygems.org"
 
 gem "faraday", "~> 2.5"
 gem "faraday-multipart"
+gem "faraday-mashify"
 gem "hashie", "~> 4.1"
 gem "multi_json", "~> 1.0"
 gem "chronic", "~> 0.10"
