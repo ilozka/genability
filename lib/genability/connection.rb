@@ -16,9 +16,9 @@ module Genability
       }
 
       Faraday::Connection.new(options) do |connection|
-        connection.basic_auth application_id, application_key
         connection.headers['Accept'] = "application/#{format}; charset=utf-8"
         connection.headers['User-Agent'] = user_agent
+        connection.request :basic_auth, application_id, application_key
         connection.request :json
         connection.request :multipart
         connection.response :mashify unless raw
@@ -36,4 +36,3 @@ module Genability
     end
   end
 end
-
