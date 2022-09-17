@@ -1,4 +1,5 @@
 require 'faraday'
+require 'faraday/multipart'
 
 module Genability
   # Defines constants and methods related to configuration
